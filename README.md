@@ -1,2 +1,5 @@
-# landing-page-odin-project
-Project: Landing Page - The Odin Project
+# Project: Landing Page - The Odin Project
+
+This is one of the projects for [The Odin Project](https://www.theodinproject.com/), in the foundations syllabus.
+
+	
