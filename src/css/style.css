@@ -17,10 +17,18 @@ footer {
     background-color: var(--main_color);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, min(550px, 50vw)) 1fr;
+    padding: 2rem;
+}
+
 nav {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
 }
 
 .logo {
@@ -46,11 +54,14 @@ nav ul a {
 }
 
 .hero {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
     display: flex;
+    width: 100%;
     color: var(--off_color_1);
-    justify-content: center;
-    padding: 5rem;
-    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0;
 }
 
 .hero h1 {
@@ -84,4 +95,3 @@ nav ul a {
     height: 280px;
     width: 100%;
 }
-
