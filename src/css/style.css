@@ -106,6 +106,7 @@ nav ul a {
 }
 
 .information h2 {
+    text-align: center;
     font-size: 36px;
     font-weight: bolder;
     margin-top: 1rem;
@@ -114,6 +115,8 @@ nav ul a {
 
 .information-images {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     gap: 3rem;
     padding: 3rem 0;
     margin-bottom: 2rem;
@@ -157,4 +160,25 @@ nav ul a {
 
 .quote .author::before {
     content: "-";
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    justify-content: space-around;
+    margin: 6rem auto;
+    background-color: var(--secondary_color);
+    color: var(--off_color_1);
+    border-radius: 8px;
+    width: min(60rem, 100%);
+}
+
+.cta button {
+    background-color: var(--secondary_color);
+    color: var(--off_color_1);
+    border: 3px solid var(--off_color_1);
+    border-radius: 8px;
+    padding: 6px 36px;
 }
