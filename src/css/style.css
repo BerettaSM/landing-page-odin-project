@@ -13,12 +13,9 @@ body {
     overflow-x: hidden;
 }
 
-header,
-footer {
-    background-color: var(--main_color);
-}
-
 header {
+    background-color: var(--main_color);
+    color: var(--off_color_1);
     display: grid;
     grid-template-columns: 1fr repeat(2, min(550px, 50vw)) 1fr;
     padding: 2rem;
@@ -59,7 +56,6 @@ nav ul a {
     grid-column: 2 / 4;
     display: flex;
     width: 100%;
-    color: var(--off_color_1);
     justify-content: space-between;
     align-items: center;
     padding: 7rem 0;
@@ -181,4 +177,14 @@ nav ul a {
     border: 3px solid var(--off_color_1);
     border-radius: 8px;
     padding: 6px 36px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_color);
+    font-size: 18px;
+    color: var(--off_color_1);
+    padding: 2.5rem 0;
 }
